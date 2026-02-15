@@ -9,13 +9,13 @@ body {
 }
 
 .container {
-    background: rgba(255,255,255,0.1);
-    padding: 30px;
-    border-radius: 15px;
-    width: 350px;
-    text-align: center;
-    backdrop-filter: blur(10px);
+  max-width: 500px;
+  width: 95%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
 }
+
 
 input, textarea {
     width: 100%;
@@ -104,3 +104,34 @@ button {
     text-align: center;
 }
 
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+  .container {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input, textarea, button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .stars span {
+    font-size: 32px;
+  }
+
+  .review-box {
+    width: 100%;
+  }
+
+  .popup {
+    width: 90%;
+  }
+
+}
