@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>⭐ Review Portal ⭐</h1>
+
+    <input type="text" id="name" placeholder="Your Name">
+
+    <div class="stars" id="stars">
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+    </div>
+
+    <textarea id="message" placeholder="Write your review"></textarea>
+
+    <button onclick="submitReview()">Submit Review</button>
+
+</div>
+
+<!-- Reviews -->
+<div class="reviews-container">
+    <h2>Reviews</h2>
+    <div id="reviewsList"></div>
+</div>
+
+<!-- Thank You Popup -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h2>🎉 Thank You!</h2>
+        <p>Your review has been submitted.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
